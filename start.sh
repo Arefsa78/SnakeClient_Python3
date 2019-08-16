@@ -13,9 +13,10 @@ host="127.0.0.1"
 port=20002
 teamname="SnakeBase"
 
-if [ $# -eq 1 ]
+if [ $# -eq 2 ]
 then
 	type=$1
+	teamname=$2
 fi
 
 if [ $# -eq 2 ]
