@@ -1,5 +1,6 @@
 from src.base.Math import *
 
+
 class Snake:
     def __init__(self, id):
         self.id = id
@@ -64,7 +65,8 @@ class World:
 
         for s in self.snakes:
             id = message.name_id[self.snakes[s].name]
-            self.snakes[id].set_head(Vector2D(message.world['heads'][self.snakes[s].name][0], message.world['heads'][self.snakes[s].name][1]))
+            self.snakes[id].set_head(Vector2D(message.world['heads'][self.snakes[s].name][0],
+                                              message.world['heads'][self.snakes[s].name][1]))
 
     def get_self(self):
         return self.snakes[self.self_id]

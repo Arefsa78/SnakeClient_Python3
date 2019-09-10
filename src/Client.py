@@ -8,6 +8,7 @@ import src.ClientRandom as c_random
 import src.ClientBest as c_best
 import src.YourClient as c_your
 import signal
+
 is_run = True
 
 
@@ -77,4 +78,3 @@ def run():
                 action = input('enter action (u or d or l or r:')
 
             sock.sendto(MessageClientAction(string_action=action).build(), server_address)
-

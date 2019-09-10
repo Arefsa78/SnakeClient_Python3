@@ -1,8 +1,10 @@
 from src.World import *
-import random
+
+from src.lib.decision import decision
 
 
-def get_action(world: World):
-    actions = ['u', 'd', 'l', 'r']
-    action = actions[random.randint(0, 3)]
+def get_action(world):
+
+    action = decision(world)
+
     return action

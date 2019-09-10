@@ -1,8 +1,6 @@
 #### start.sh
 ```bash
 ./start.sh {type} {team_name}
-# or
-./start.sh {team_name}
 ```
 > types: best, greedy, random, hand, your
 
